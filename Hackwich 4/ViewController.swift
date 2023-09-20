@@ -7,13 +7,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
+    
+    
+        
+        
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func pressbutton(_ sender: Any) {
+        var text = "Sushi, Italian, Cookies"
+        
+    }
+    
+    
+    
+    @IBOutlet weak var pressmebutton: UIButton!
 }
 
