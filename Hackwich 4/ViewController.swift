@@ -15,20 +15,21 @@ class ViewController: UIViewController
         
         
     
-
+    @IBOutlet weak var label: UILabel!
+    
+    @IBAction func firstLabel(_sender: Any)
+    {
+        label.text = "About"
+    }
+    
+       
+    
+        
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func pressbutton(_ sender: Any) {
-        var text = "Sushi, Italian, Cookies"
-        
-    }
-    
-    
-    
-    @IBOutlet weak var pressmebutton: UIButton!
+   
 }
 

@@ -28,6 +28,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="J3L-wA-jbn"/>
+                    <connections>
+                        <outlet property="secondLabel" destination="J65-GY-F9k" id="2Xt-OF-7Sj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJn-C0-qmW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,10 +57,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="9F3-BM-pmv"/>
+                    <connections>
+                        <outlet property="firstLabel" destination="Ggw-6j-eSU" id="aFI-3Y-uuX"/>
+                        <outlet property="label" destination="Ggw-6j-eSU" id="cJb-nI-0Gm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v9v-pa-qdX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057.2519083969464" y="-627.46478873239437"/>
+            <point key="canvasLocation" x="1055.7251908396945" y="-627.46478873239437"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="T5f-37-1Zv">
@@ -117,10 +124,10 @@
             </objects>
             <point key="canvasLocation" x="86" y="15"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="3T7-Ne-C2U">
             <objects>
-                <viewController id="MjE-9P-U8W" sceneMemberID="viewController">
+                <viewController id="MjE-9P-U8W" customClass="thirdViewController" customModule="Hackwich_4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aha-qX-3X1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,6 +144,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="yGS-Ig-gqG"/>
+                    <connections>
+                        <outlet property="thirdLabel" destination="gv2-J7-VKu" id="Yg0-qY-wGK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fkT-7m-ejM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -161,10 +171,10 @@
             </objects>
             <point key="canvasLocation" x="67.938931297709928" y="686.61971830985919"/>
         </scene>
-        <!--Thirdh View Controller-->
+        <!--Four View Controller-->
         <scene sceneID="WqM-6b-M2b">
             <objects>
-                <viewController id="rrI-qx-0ts" customClass="thirdhViewController" customModule="Hackwich_4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rrI-qx-0ts" customClass="fourViewController" customModule="Hackwich_4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H8T-b3-fki">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,6 +194,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="My Favorite Foods"/>
                                 <connections>
+                                    <action selector="favFoodButtonPressed:" destination="rrI-qx-0ts" eventType="touchUpInside" id="DiV-yw-Qr5"/>
                                     <action selector="favFoods:" destination="OVy-vw-1F1" eventType="touchUpInside" id="4tY-1m-qgD"/>
                                     <action selector="favoriteFoods:" destination="OVy-vw-1F1" eventType="touchUpInside" id="MsH-do-h9z"/>
                                     <action selector="myFavoriteFoods:" destination="OVy-vw-1F1" eventType="touchUpInside" id="Ueg-cC-MDV"/>
@@ -197,6 +208,7 @@
                     <navigationItem key="navigationItem" id="nKo-YB-vuQ"/>
                     <connections>
                         <outlet property="favoritefoods" destination="EJo-CG-q25" id="mT3-fq-Ate"/>
+                        <outlet property="fourthLabel" destination="EJo-CG-q25" id="XYb-Mo-oRP"/>
                         <outlet property="myFavoriteFoods" destination="EJo-CG-q25" id="Qsf-4g-0VK"/>
                         <outlet property="pressmebutton" destination="W3N-OZ-vJc" id="j07-7g-Xed"/>
                     </connections>
